@@ -1,0 +1,25 @@
+<div class="d-flex flex-row col-md-6">    
+    <input class="form-control" [(ngModel)]="pais" placeholder="Filtre por pais" list="paises" (change)="obtenerEstadosPais()">
+    <datalist id="paises">        
+        <option *ngFor="let pais of paises" value="{{pais.id}}">
+            {{pais.name}}
+        </option>
+    </datalist>
+</div><br>
+<div class="alert alert-danger" *ngIf="estados.length==0">Realice el filtro para ver los estados de ese pais.</div>
+<table class="table table-striped" *ngIf="estados.length!=0" id="tablaEstados">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Estados</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let estado of estados">
+            <td>{{estado.id}}</td>
+            <td>{{estado.name}}</td>
+            <td></td>
+        </tr>
+    </tbody>
+  </table>

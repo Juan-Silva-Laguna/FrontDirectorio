@@ -1,0 +1,17 @@
+<div class="alert alert-success text-center">Todos los Paises del Mundo</div>
+<table class="table table-striped" id="tablaPaises">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Pais</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of paises">
+            <td>{{pais.id}}</td>
+            <td>{{pais.name}}</td>
+            <td></td>
+        </tr>
+    </tbody>
+  </table>

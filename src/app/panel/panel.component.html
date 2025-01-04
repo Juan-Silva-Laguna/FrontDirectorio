@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed;width:100%;">
+    <img src="https://3.bp.blogspot.com/-wIzGt282ex0/WfxArpVBp1I/AAAAAAAAAUc/akoZA-6pY14VR-o1-2pcP5DVIXX3_XvNACLcBGAs/s1600/Cplp%2Bgif.gif" width="60" height="60" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="mostrar-usuarios">Usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="mostrar-paises">Paises</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="mostrar-estados">Estados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="mostrar-ciudades">Ciudades</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Configuración
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" routerLink="editar-usuario">Actualizar mis datos</a>
+                <a class="dropdown-item" href="#">Eliminar mi cuenta</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa fa-power-off" aria-hidden="true"></i>Cerrar Sesion</button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+    <br><br><br><br><br>
+    <router-outlet></router-outlet>
+    <br><br>
+</div>
+<footer class="text-center text-lg-start bg-light text-muted" style="position:fixed;left:0px;bottom:0px;height:10%;width:100%;">
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold">Juan Silva</a>
+  </div>
+</footer>
